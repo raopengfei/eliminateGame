@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#app{
+    border: 1px solid aquamarine;
+    margin: 250px auto;
+    position: relative;
+    width: 495px;
+    height: 495px;
+    background: #000000;
+    overflow:hidden;
+}
+#app li{
+    position: absolute;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    list-style: none;
+    cursor: pointer;
+}
+#app li>div {
+    height: 55px;
+}
+.active{
+    background: aquamarine;
+    height: 55px;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(255,255,255,0.3);
+    width: 53px;
+    height: 53px;
+    border: 1px solid pink;
+}
+.remove{
+    background: orange;
+}
+.none{
+    display: none;
+}
+/*.list-item {*/
+    /*display: inline-block;*/
+    /*margin-right: 10px;*/
+/*}*/
+/*.list-enter-active, .list-leave-active {*/
+    /*transition: all 1s;*/
+/*}*/
+/*.list-enter, .list-leave-active {*/
+    /*opacity: 0;*/
+    /*transform: translateY(-55px);*/
+/*}*/
+/*.swap-move {*/
+    /*transition: transform 0.8s;*/
+/*}*/
+.list-move-item {
+    transition:  0.8s;
+    position: absolute;
+    transition-property: left,top,transform;
+}
+.list-move-enter{
+    opacity: 0;
+    transform: translateY(-55px);
+}
+.list-move-leave-active {
+    opacity: 0;
+}

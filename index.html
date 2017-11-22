@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <div id="app" >
+        <!--<transition-group name="list-move" tag="ul" v-for="(row, r) in data">-->
+        <transition-group name="list-move" tag="ul">
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[0]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[1]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[2]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[3]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[4]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[5]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[6]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[7]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in data[8]"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+            <li class="list-move-item" v-bind:key="cell.id" v-for="(cell, i) in rem"  v-bind:style="{left:cell.x*55 +'px',top:cell.y*55 +'px',color:cell.removeX || cell.removeY  ?  'red' : 'black'}">
+                <obj-list v-bind:cell="cell"  v-on:li_click="updataLastCell"></obj-list>
+            </li>
+        </transition-group>
+    </div>
+
+</body>
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/underscore/underscore-min.js"></script>
+    <script src="./util.js"></script>
+    <script src="my.js"></script>
+</html>

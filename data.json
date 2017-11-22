@@ -1,0 +1,26 @@
+{
+  "obj": [],
+  "border":{
+    "type":"static"
+  },
+  "type":[{
+    "name":"cow",
+    "src":"imgs/cow.png"
+  },{
+    "name":"chicken",
+    "src":"imgs/chicken.png"
+  },{
+    "name":"fox",
+    "src":"imgs/fox.png"
+  },{
+    "name":"banana",
+    "src":"imgs/banana.png"
+  },{
+    "name":"ice",
+    "src":"imgs/ice.png"
+  },{
+    "name":"flower",
+    "src":"imgs/flower.png"
+  }],
+  "power":["normal","static"]
+}
